@@ -5,8 +5,8 @@ import { getAllMeals } from "@/lib/meals";
 
 import classes from "./page.module.css";
 
-export default function Meals() {
-  const meals = getAllMeals();
+export default async function Meals() {
+  const meals = await getAllMeals();
 
   return (
     <>
